@@ -1,462 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>CyberSec | Portfolio</title>
-
-    <link rel="stylesheet" href="style.css">
-
-    <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vagish Parameshwar Shanbhag - IoT, Cybersecurity and Blockchain Engineering Student">
+  <title>Vagish Shanbhag | Cybersecurity Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
 </head>
-
 <body>
+  <div class="noise"></div>
+  <div class="grid-bg"></div>
+  <div class="cursor-glow"></div>
 
-    <!-- Background -->
-    <div class="grid"></div>
-
-    <!-- Navigation -->
-    <nav>
-        <div class="logo">
-            <span>&lt;</span>CYBER<span>/&gt;</span>
-        </div>
-
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </div>
-
-        <button class="menu-btn">
-            <i class="fas fa-bars"></i>
-        </button>
+  <header class="navbar">
+    <a class="brand" href="#home"><span>&lt;</span>VS<span>/&gt;</span></a>
+    <button class="menu-toggle" aria-label="Open navigation"><i class="fa-solid fa-bars"></i></button>
+    <nav class="nav-links">
+      <a href="#about">01. About</a>
+      <a href="#skills">02. Skills</a>
+      <a href="#projects">03. Projects</a>
+      <a href="#achievements">04. Achievements</a>
+      <a href="#contact">05. Contact</a>
     </nav>
+  </header>
 
-
-    <!-- HERO -->
-    <section class="hero" id="home">
-
-        <div class="hero-content">
-
-            <p class="small-title">
-                <span>01.</span> WELCOME TO MY DIGITAL WORLD
-            </p>
-
-            <h1>
-                Building the
-                <span class="glow">Future</span>
-                <br>
-                One Line of Code.
-            </h1>
-
-            <p class="description">
-                Engineering student passionate about
-                <strong>Cybersecurity, IoT and Blockchain</strong>.
-                I build secure systems and experiment with
-                technologies that solve real-world problems.
-            </p>
-
-            <div class="typing">
-                <span>$</span>
-                <span id="typing-text"></span>
-                <span class="cursor">|</span>
-            </div>
-
-            <div class="buttons">
-
-                <a href="#projects" class="primary-btn">
-                    View Projects
-                    <i class="fas fa-arrow-right"></i>
-                </a>
-
-                <a href="#contact" class="secondary-btn">
-                    Contact Me
-                </a>
-
-            </div>
-
+  <main>
+    <section class="hero section-shell" id="home">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span>01</span> ENGINEERING • SECURITY • BUILDING</p>
+        <h1>Vagish<br><span>Shanbhag</span></h1>
+        <div class="terminal-line">
+          <span class="prompt">$</span>
+          <span id="typed-text"></span><span class="caret">_</span>
         </div>
-
-
-        <!-- Cyber Circle -->
-        <div class="cyber-visual">
-
-            <div class="outer-ring"></div>
-            <div class="middle-ring"></div>
-
-            <div class="core">
-
-                <i class="fas fa-shield-halved"></i>
-
-                <div class="scan-line"></div>
-
-            </div>
-
-            <div class="floating-card card-one">
-                <i class="fas fa-lock"></i>
-                <span>SECURE</span>
-            </div>
-
-            <div class="floating-card card-two">
-                <i class="fas fa-code"></i>
-                <span>CODE</span>
-            </div>
-
-            <div class="floating-card card-three">
-                <i class="fas fa-network-wired"></i>
-                <span>NETWORK</span>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ABOUT -->
-    <section class="section" id="about">
-
-        <div class="section-title">
-            <span>02.</span>
-            <h2>About Me</h2>
-        </div>
-
-        <div class="about-container">
-
-            <div class="about-text">
-
-                <h3>
-                    Engineer by education.
-                    <span>Problem solver by choice.</span>
-                </h3>
-
-                <p>
-                    I enjoy understanding how technology works beneath
-                    the surface. From Linux systems and networks to
-                    cybersecurity and IoT devices, I like taking things
-                    apart and figuring out what makes them work.
-                </p>
-
-                <p>
-                    My current focus is building practical projects
-                    while strengthening my foundations in programming,
-                    networking, security and system design.
-                </p>
-
-            </div>
-
-
-            <div class="terminal">
-
-                <div class="terminal-header">
-
-                    <div class="dots">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-
-                    <p>terminal</p>
-
-                </div>
-
-                <div class="terminal-body">
-
-                    <p>
-                        <span class="green">user</span>@<span class="blue">
-                        cyberlab</span>:~$
-                    </p>
-
-                    <p>whoami</p>
-
-                    <p class="output">
-                        Engineering Student
-                    </p>
-
-                    <p>cat interests.txt</p>
-
-                    <p class="output">
-                        Cybersecurity<br>
-                        IoT<br>
-                        Blockchain<br>
-                        Linux<br>
-                        Software Development
-                    </p>
-
-                    <p>
-                        <span class="green">user</span>@<span class="blue">
-                        cyberlab</span>:~$
-                        <span class="blink">_</span>
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- SKILLS -->
-    <section class="section" id="skills">
-
-        <div class="section-title">
-            <span>03.</span>
-            <h2>Technical Arsenal</h2>
-        </div>
-
-
-        <div class="skills-grid">
-
-            <div class="skill-card">
-
-                <i class="fas fa-shield-halved"></i>
-
-                <h3>Cybersecurity</h3>
-
-                <p>
-                    Network security, Linux,
-                    vulnerability analysis and
-                    security fundamentals.
-                </p>
-
-                <div class="tags">
-                    <span>Kali Linux</span>
-                    <span>Nmap</span>
-                    <span>Wireshark</span>
-                </div>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <i class="fas fa-microchip"></i>
-
-                <h3>IoT</h3>
-
-                <p>
-                    Connected devices, sensors,
-                    microcontrollers and
-                    embedded systems.
-                </p>
-
-                <div class="tags">
-                    <span>Arduino</span>
-                    <span>ESP32</span>
-                    <span>MQTT</span>
-                </div>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <i class="fas fa-code"></i>
-
-                <h3>Programming</h3>
-
-                <p>
-                    Building applications and
-                    solving problems using
-                    modern programming languages.
-                </p>
-
-                <div class="tags">
-                    <span>Python</span>
-                    <span>C++</span>
-                    <span>JavaScript</span>
-                </div>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <i class="fas fa-link"></i>
-
-                <h3>Blockchain</h3>
-
-                <p>
-                    Exploring decentralized
-                    systems, smart contracts
-                    and distributed technology.
-                </p>
-
-                <div class="tags">
-                    <span>Web3</span>
-                    <span>Ethereum</span>
-                    <span>Smart Contracts</span>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- PROJECTS -->
-    <section class="section" id="projects">
-
-        <div class="section-title">
-            <span>04.</span>
-            <h2>Featured Projects</h2>
-        </div>
-
-
-        <div class="projects-grid">
-
-
-            <article class="project-card">
-
-                <div class="project-top">
-
-                    <i class="far fa-folder"></i>
-
-                    <div>
-                        <i class="fab fa-github"></i>
-                        <i class="fas fa-external-link-alt"></i>
-                    </div>
-
-                </div>
-
-                <h3>SATYA</h3>
-
-                <p>
-                    An AI-powered misinformation analysis
-                    platform designed to analyze claims and
-                    provide supporting information.
-                </p>
-
-                <div class="project-tech">
-                    <span>Python</span>
-                    <span>FastAPI</span>
-                    <span>AI</span>
-                </div>
-
-            </article>
-
-
-            <article class="project-card">
-
-                <div class="project-top">
-
-                    <i class="far fa-folder"></i>
-
-                    <div>
-                        <i class="fab fa-github"></i>
-                        <i class="fas fa-external-link-alt"></i>
-                    </div>
-
-                </div>
-
-                <h3>IoT Smart System</h3>
-
-                <p>
-                    A connected IoT system using sensors
-                    and microcontrollers to automate
-                    real-world tasks.
-                </p>
-
-                <div class="project-tech">
-                    <span>ESP32</span>
-                    <span>Arduino</span>
-                    <span>MQTT</span>
-                </div>
-
-            </article>
-
-
-            <article class="project-card">
-
-                <div class="project-top">
-
-                    <i class="far fa-folder"></i>
-
-                    <div>
-                        <i class="fab fa-github"></i>
-                        <i class="fas fa-external-link-alt"></i>
-                    </div>
-
-                </div>
-
-                <h3>Secure Network Lab</h3>
-
-                <p>
-                    A practical cybersecurity laboratory
-                    for learning network analysis,
-                    scanning and security concepts.
-                </p>
-
-                <div class="project-tech">
-                    <span>Linux</span>
-                    <span>Nmap</span>
-                    <span>Wireshark</span>
-                </div>
-
-            </article>
-
-        </div>
-
-    </section>
-
-
-    <!-- CONTACT -->
-    <section class="contact" id="contact">
-
-        <p class="small-title">05. WHAT'S NEXT?</p>
-
-        <h2>Let's Build Something.</h2>
-
-        <p>
-            Whether it's cybersecurity, IoT or software,
-            good ideas become interesting when you actually
-            build them.
+        <p class="hero-text">
+          IoT, Cybersecurity &amp; Blockchain engineering student focused on
+          building secure, practical and real-world technology.
         </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Explore Projects <i class="fa-solid fa-arrow-down"></i></a>
+          <a class="btn btn-ghost" href="https://github.com/" target="_blank" rel="noreferrer">GitHub <i class="fa-brands fa-github"></i></a>
+        </div>
+        <div class="hero-meta">
+          <span><i class="fa-solid fa-location-dot"></i> Bengaluru, India</span>
+          <span><i class="fa-solid fa-graduation-cap"></i> CGPA 9.0</span>
+          <span><i class="fa-solid fa-shield-halved"></i> Cybersecurity</span>
+        </div>
+      </div>
 
-        <a href="mailto:example@email.com" class="primary-btn">
-            Get In Touch
-        </a>
-
+      <div class="hero-visual reveal delay-1">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="orbit orbit-c"></div>
+        <div class="shield-core">
+          <div class="core-ring"></div>
+          <i class="fa-solid fa-shield-halved"></i>
+          <span>SECURE<br>THE<br>FUTURE</span>
+        </div>
+        <div class="floating-chip chip-1"><i class="fa-brands fa-python"></i> PYTHON</div>
+        <div class="floating-chip chip-2"><i class="fa-solid fa-terminal"></i> LINUX</div>
+        <div class="floating-chip chip-3"><i class="fa-solid fa-microchip"></i> ESP32</div>
+      </div>
     </section>
 
-
-    <!-- FOOTER -->
-    <footer>
-
-        <p>
-            Designed & Built with
-            <span>♥</span>
-            and lots of coffee.
-        </p>
-
-        <div class="socials">
-
-            <a href="#">
-                <i class="fab fa-github"></i>
-            </a>
-
-            <a href="#">
-                <i class="fab fa-linkedin"></i>
-            </a>
-
-            <a href="#">
-                <i class="fab fa-instagram"></i>
-            </a>
-
+    <section class="section-shell section" id="about">
+      <div class="section-heading reveal"><span>01.</span><h2>About Me</h2><div></div></div>
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <p class="lead">
+            Engineering student specializing in <strong>IoT, Cybersecurity and Blockchain</strong>,
+            with hands-on experience across AI-powered applications, full-stack development and IoT projects.
+          </p>
+          <p>
+            I enjoy understanding how systems work, finding where they can fail, and turning ideas into
+            working technology. My current direction is cybersecurity, backed by strong foundations in
+            programming, Linux, networking and modern web development.
+          </p>
+          <div class="stats">
+            <div><strong>9.0</strong><span>CGPA</span></div>
+            <div><strong>3+</strong><span>Projects</span></div>
+            <div><strong>6+</strong><span>Certifications</span></div>
+            <div><strong>1st</strong><span>AIKYA-25</span></div>
+          </div>
         </div>
 
-    </footer>
+        <div class="terminal reveal delay-1">
+          <div class="terminal-top"><span></span><span></span><span></span><b>vagish@cyberlab:~</b></div>
+          <div class="terminal-body">
+            <p><span class="green">vagish@cyberlab</span>:~$ whoami</p>
+            <p class="output">IoT | Cybersecurity | Blockchain Engineering Student</p>
+            <p><span class="green">vagish@cyberlab</span>:~$ cat focus.txt</p>
+            <p class="output">secure systems<br>real-world projects<br>continuous learning</p>
+            <p><span class="green">vagish@cyberlab</span>:~$ <span class="blink">_</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section class="section-shell section" id="skills">
+      <div class="section-heading reveal"><span>02.</span><h2>Technical Arsenal</h2><div></div></div>
+      <div class="skill-grid">
+        <article class="skill-card reveal"><div class="icon"><i class="fa-solid fa-code"></i></div><h3>Programming</h3><p>Python, Java, C, C++, JavaScript</p><div class="meter"><span style="width:88%"></span></div></article>
+        <article class="skill-card reveal delay-1"><div class="icon"><i class="fa-solid fa-laptop-code"></i></div><h3>Frontend</h3><p>HTML, CSS, React.js, Next.js</p><div class="meter"><span style="width:84%"></span></div></article>
+        <article class="skill-card reveal delay-2"><div class="icon"><i class="fa-solid fa-server"></i></div><h3>Backend</h3><p>FastAPI, REST APIs</p><div class="meter"><span style="width:78%"></span></div></article>
+        <article class="skill-card reveal"><div class="icon"><i class="fa-solid fa-shield-halved"></i></div><h3>Cybersecurity</h3><p>Network Fundamentals, Kali Linux</p><div class="meter"><span style="width:82%"></span></div></article>
+        <article class="skill-card reveal delay-1"><div class="icon"><i class="fa-solid fa-microchip"></i></div><h3>IoT &amp; Embedded</h3><p>Arduino Uno, ESP32, Wokwi</p><div class="meter"><span style="width:80%"></span></div></article>
+        <article class="skill-card reveal delay-2"><div class="icon"><i class="fa-brands fa-git-alt"></i></div><h3>Tools &amp; Platform</h3><p>Git, GitHub, VS Code, Linux</p><div class="meter"><span style="width:86%"></span></div></article>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <section class="section-shell section" id="projects">
+      <div class="section-heading reveal"><span>03.</span><h2>Selected Projects</h2><div></div></div>
+      <div class="project-grid">
+        <article class="project-card featured reveal">
+          <div class="project-number">01</div>
+          <div class="project-icon"><i class="fa-solid fa-shield-virus"></i></div>
+          <p class="project-type">AI • CYBERSECURITY</p>
+          <h3>SATYA</h3>
+          <p>AI-powered misinformation detection system that integrates AI models with fact-checking and news APIs and generates credibility reports with confidence scores.</p>
+          <div class="tech-list"><span>Python</span><span>FastAPI</span><span>Hugging Face</span><span>Gemini API</span><span>REST APIs</span></div>
+        </article>
+        <article class="project-card reveal delay-1">
+          <div class="project-number">02</div>
+          <div class="project-icon"><i class="fa-solid fa-note-sticky"></i></div>
+          <p class="project-type">FULL-STACK • PRODUCTIVITY</p>
+          <h3>LECTRA</h3>
+          <p>Modern smart notes and productivity web app with task management, deadlines, progress tracking and a responsive reusable dashboard.</p>
+          <div class="tech-list"><span>Next.js</span><span>React</span><span>TypeScript</span><span>Tailwind CSS</span></div>
+        </article>
+        <article class="project-card reveal delay-2">
+          <div class="project-number">03</div>
+          <div class="project-icon"><i class="fa-solid fa-wave-square"></i></div>
+          <p class="project-type">IOT • GROUP PROJECT</p>
+          <h3>MIDI THEREMIN</h3>
+          <p>MIDI-based theremin controller project involving Arduino programming, MIDI communication and signal testing using MIDI-OX and Hairless MIDI.</p>
+          <div class="tech-list"><span>Arduino Uno</span><span>Arduino IDE</span><span>MIDI</span><span>MIDI-OX</span></div>
+        </article>
+      </div>
+    </section>
 
+    <section class="section-shell section" id="achievements">
+      <div class="section-heading reveal"><span>04.</span><h2>Achievements &amp; Certifications</h2><div></div></div>
+      <div class="timeline">
+        <article class="timeline-item reveal"><span class="dot"></span><div><span class="year">AIKYA-25</span><h3>First Place — National Level Technical Fest</h3><p>Project Expo organized by EPCET in association with IEEE.</p></div></article>
+        <article class="timeline-item reveal delay-1"><span class="dot"></span><div><span class="year">INSPIRE AWARD MANAK</span><h3>National Innovation Initiative</h3><p>Selected for the INSPIRE Award MANAK by DST, Government of India.</p></div></article>
+        <article class="timeline-item reveal delay-2"><span class="dot"></span><div><span class="year">JIGNYASA 2019</span><h3>Special Prize — State Level</h3><p>Science Model Competition sponsored by Honeywell.</p></div></article>
+        <article class="timeline-item reveal"><span class="dot"></span><div><span class="year">CERTIFICATIONS</span><h3>OCI • Mastercard • Deloitte • Capgemini • Oracle SQL • NCAT</h3><p>Oracle Cloud Infrastructure Foundations Associate, Mastercard Cybersecurity Job Simulation, Deloitte Technology Job Simulation, Capgemini Blockchain for Beginners, Oracle SQL Certification and All India NCAT.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section-shell section education">
+      <div class="section-heading reveal"><span>05.</span><h2>Education</h2><div></div></div>
+      <div class="education-grid">
+        <article class="edu-card reveal"><span>2024 — 2028</span><h3>East Point College of Engineering and Technology</h3><p>Bachelor of Engineering in IoT and Cybersecurity with Blockchain Technology</p><strong>CGPA: 9.0</strong></article>
+        <article class="edu-card reveal delay-1"><span>2022 — 2024</span><h3>Dr. A.V. Baliga PU College of Arts and Science</h3><p>Pre-University Course (PCM)</p><strong>86.16%</strong></article>
+        <article class="edu-card reveal delay-2"><span>2019 — 2022</span><h3>GIBB Highschool Kumta</h3><p>SSLC</p><strong>98.88%</strong></article>
+      </div>
+    </section>
+
+    <section class="contact section-shell" id="contact">
+      <div class="contact-card reveal">
+        <p class="eyebrow"><span>06</span> HAVE AN IDEA?</p>
+        <h2>Let's build something<br><span>worth deploying.</span></h2>
+        <p>Interested in cybersecurity, IoT, software or technology projects? Let's connect.</p>
+        <a class="btn btn-primary" href="mailto:vagishshanbhag09@gmail.com">vagishshanbhag09@gmail.com <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        <div class="social-row">
+          <a href="https://github.com/" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Vagish Parameshwar Shanbhag</span>
+    <span>Built with HTML • CSS • JavaScript</span>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
