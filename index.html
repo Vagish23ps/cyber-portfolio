@@ -12,6 +12,27 @@
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/responsive.css">
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js"></script>
+  <style>
+    .project-card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+    .project-card .project-repo {
+      margin-top: 22px;
+      color: var(--cyan);
+      font: 10px "Space Mono", monospace;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      opacity: .9;
+      transition: .25s;
+    }
+    .project-card:hover .project-repo {
+      letter-spacing: .5px;
+    }
+  </style>
 </head>
 <body>
   <div class="noise"></div>
@@ -118,30 +139,49 @@
     <section class="section-shell section" id="projects">
       <div class="section-heading reveal"><span>03.</span><h2>Selected Projects</h2><div></div></div>
       <div class="project-grid">
-        <article class="project-card featured reveal">
+
+       
+        <a href="https://github.com/Vagish23ps/satya-ai-misinformation-detector"
+           class="project-card featured reveal"
+           target="_blank"
+           rel="noopener noreferrer">
           <div class="project-number">01</div>
           <div class="project-icon"><i class="fa-solid fa-shield-virus"></i></div>
           <p class="project-type">AI • CYBERSECURITY</p>
           <h3>SATYA</h3>
           <p>AI-powered misinformation detection system that integrates AI models with fact-checking and news APIs and generates credibility reports with confidence scores.</p>
           <div class="tech-list"><span>Python</span><span>FastAPI</span><span>Hugging Face</span><span>Gemini API</span><span>REST APIs</span></div>
-        </article>
-        <article class="project-card reveal delay-1">
+          <div class="project-repo"><i class="fa-brands fa-github"></i> View Repository</div>
+        </a>
+
+   
+        <a href="https://github.com/Vagish23ps/Lectra"
+           class="project-card reveal delay-1"
+           target="_blank"
+           rel="noopener noreferrer">
           <div class="project-number">02</div>
           <div class="project-icon"><i class="fa-solid fa-note-sticky"></i></div>
           <p class="project-type">FULL-STACK • PRODUCTIVITY</p>
           <h3>LECTRA</h3>
           <p>Modern smart notes and productivity web app with task management, deadlines, progress tracking and a responsive reusable dashboard.</p>
           <div class="tech-list"><span>Next.js</span><span>React</span><span>TypeScript</span><span>Tailwind CSS</span></div>
-        </article>
-        <article class="project-card reveal delay-2">
+          <div class="project-repo"><i class="fa-brands fa-github"></i> View Repository</div>
+        </a>
+
+        
+        <a href="Repo_not_created_yet"
+           class="project-card reveal delay-2"
+           target="_blank"
+           rel="noopener noreferrer">
           <div class="project-number">03</div>
           <div class="project-icon"><i class="fa-solid fa-wave-square"></i></div>
           <p class="project-type">IOT • GROUP PROJECT</p>
           <h3>MIDI THEREMIN</h3>
           <p>MIDI-based theremin controller project involving Arduino programming, MIDI communication and signal testing using MIDI-OX and Hairless MIDI.</p>
           <div class="tech-list"><span>Arduino Uno</span><span>Arduino IDE</span><span>MIDI</span><span>MIDI-OX</span></div>
-        </article>
+          <div class="project-repo"><i class="fa-brands fa-github"></i> View Repository</div>
+        </a>
+
       </div>
     </section>
 
@@ -171,8 +211,8 @@
         <p>Interested in cybersecurity, IoT, software or technology projects? Let's connect.</p>
         <a class="btn btn-primary" href="mailto:vagishshanbhag09@gmail.com">vagishshanbhag09@gmail.com <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         <div class="social-row">
-          <a href="https://github.com/" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
-          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="https://github.com/Vagish23ps" target="_blank" rel="noreferrer"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/vagish-shanbhag-a39752341" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
         </div>
       </div>
     </section>
